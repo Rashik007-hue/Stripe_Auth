@@ -368,7 +368,7 @@ def home():
         "endpoint": "/api/stripe_auth",
         "usage": "/api/stripe_auth?cc=CC|MM|YY|CVV",
         "example": "/api/stripe_auth?cc=4111111111111111|12|25|123",
-        "dev": "chirgg_911"
+        "Owner": "@RASHIK_69"
     }
 
 @app.get("/api/stripe_auth")
@@ -397,7 +397,7 @@ def stripe_auth(cc: str = Query(...)):
         "status": result['status'],
         "card": result['card'],
         "time": f"{result['time']:.2f}s",
-        "dev": "chirgg_911"
+        "Owner": "@RASHIK_69"
     })
 
 # Note: Vercel automatically uses the `app` object as the ASGI handler.
